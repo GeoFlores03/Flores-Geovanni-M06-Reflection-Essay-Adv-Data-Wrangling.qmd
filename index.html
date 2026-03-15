@@ -2978,191 +2978,192 @@ vertical-align: -.125em;
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;March 15, 2026&quot;</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html: </span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 4</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-link: true</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: cosmo</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    code-overflow: wrap</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">    embed-resources: true</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">    echo: true</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summarized learning of Tidyverse</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>My list of key takeaways from the sources are as follows:</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>**Advanced Counting and Summarizing**:</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Enhanced <span class="in">`count()`</span> Arguments: The <span class="in">`count()`</span> function included three functions which all hold powerful arguments. Those three being <span class="in">`sort = TRUE`</span>, <span class="in">`name`</span>, and <span class="in">`wt`</span>. Each hold different purposes. <span class="in">`sort = TRUE`</span> allows you to sort the results in descending order, <span class="in">`name`</span> allows you to specify a custom name for the count column, and <span class="in">`wt`</span> allows you to weight the counts by a specific variable. These arguments provide more flexibility and control when summarizing data.</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>List Columns in <span class="in">`summarize`</span>(): The <span class="in">`summarize()`</span> function can now create list columns, which allows you to store complex data structures within a single column. This is particularly useful for grouping and summarizing data in a more flexible way, as it enables you to keep related data together without needing to flatten it into a more traditional tabular format. This feature enhances the ability to perform more complex analyses and visualizations directly within the tidyverse framework.</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>**Specialized Factor and Plotting Techniques**:</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`fct_reorder()`</span> and <span class="in">`fct_lump()`</span>: These functions are part of the <span class="in">`forcats`</span> package and are used for handling factors in R. <span class="in">`fct_reorder()`</span> allows you to reorder factor levels based on the values of another variable, which is particularly useful for creating more informative plots. <span class="in">`fct_lump()`</span> helps to lump together infrequent factor levels into a single &quot;Other&quot; category, which can simplify visualizations and make them easier to interpret when dealing with categorical data that has many levels.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Logarithmic Scales: They sources emphasize using <span class="in">`scale_x_log10()`</span> or <span class="in">`scale_y_log10()`</span> in ggplot2 to handle data that spans several orders of magnitude. This technique is crucial for visualizing data with a wide range, as it can help to reveal patterns and relationships that might be obscured on a linear scale. Logarithmic scales can make it easier to compare values that differ greatly and can help to identify trends that are not immediately apparent in a standard plot.</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>**Tidy Data Cleaning and Simulation**:</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The <span class="in">`crossing()`</span> function: This function is the equivalent of <span class="in">`expand.grid()`</span> but is designed to work with tidy data principles. It creates a data frame from all combinations of the supplied vectors or factors, which is particularly useful for generating all possible combinations of variables for analysis or simulation purposes. This function helps to maintain the tidy data structure while allowing for comprehensive exploration of variable interactions.</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`seperate()`</span> vs <span class="in">`extract()`</span>: The <span class="in">`separate()`</span> function is used to split a single character column into multiple columns based on a specified separator, while the <span class="in">`extract()`</span> function allows you to use regular expressions to extract specific patterns from a character column into new columns. Both functions are essential for tidying data, especially when dealing with messy or unstructured data that requires parsing and restructuring to be useful for analysis.</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## David Robinson&#39;s performance and understanding</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>**Analysis of the Performance**:</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Robinsons performance in the video was impressive. He began with a dataset which he emphasized the goal of &quot;learning things&quot; with the audience. He provided looks into data sets and in real time showed him correcting data types and codes that were missing. He demonstarated the <span class="in">`ggflags`</span> package which he struggled with working with a first. I found his errors to be helpful because overtime working more with packages and data sets, I may find myself in similar situations. Him starting with a stacked bar plot then shifting to a facted slop graph showed me how to be productive and how helpful some of these packages can be for visualizations. The engagement with the audience was also helpful because it made the video more interactive and allowed for a better understanding of the concepts being discussed. Overall, I found his performance to be informative and engaging, providing valuable insights into data analysis and visualization techniques.</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>**Understanding**:</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>The performance effectively illustrates that data science is rarely a linear path. Overtime, the understanding will requires a deep familiarity with the &quot;bag of tricks&quot; mentioned in his other talk—such as <span class="in">`fct_lump`</span> to group small countries into an &quot;Other&quot; category—to turn raw, messy data into an clean, insightful visualization.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Two Proccesses</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>**Initial Data Cleaning**</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>In the first video, the process is about fundamental data integrity. The goal is to strip away responses that aren&#39;t &quot;real&quot; or usable. This usually involves:</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Validity Checks: Filtering out respondents who didn&#39;t provide consent or failed to complete the core survey sections.</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Behavioral Cleaning: Removing &quot;speeders&quot; (people who finished too fast) or &quot;straight-liners&quot; (people who chose the same answer for every question), which suggests they weren&#39;t paying attention.</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Technical De-duplication: Ensuring one response per participant by checking unique identifiers or IP addresses.</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>**Further Data Cleaning**</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>The second video moves into research-specific refinement. This is where the data is tailored to the actual study goals. This involves:</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Demographic Filtering: Keeping only the participants that fit the target profile (e.g., specific age groups or regions relevant to the COVID-19 consumer panel).</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Handling Inconsistencies: Dropping participants who gave contradictory answers (e.g., saying they are &quot;unemployed&quot; but later listing a &quot;full-time salary&quot;).</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Wave Merging: In the context of your course, this likely involves joining different &quot;waves&quot; of data (Wave 1 vs. Wave 2) to see how consumer behavior changed over time.</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>**Big Differences between the Two**</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Objective: Initial cleaning asks, &quot;Is this data valid?&quot; Further cleaning asks, &quot;Is this data relevant?&quot;</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Tools: Initial cleaning often relies on logical filters (if-then), while further cleaning involves more complex &quot;wrangling&quot; like joining datasets or recoding variables to fix specific errors.</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>**Impact on Final Sample Size**</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>The final sample size is significantly smaller than the original &quot;raw&quot; count, but it has much higher statistical power and validity. Because you&#39;ve removed the noise (initial) and the irrelevant outliers (further), the conclusions you draw are much more likely to be accurate.</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Revealjs</span></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>**Impression &amp; Capabilities**</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Vertical &amp; Horizontal Navigation: Unlike PowerPoint&#39;s linear path, Revealjs allows &quot;2D&quot; navigation. You can have main slides move left-to-right and deep-dive sub-slides move up-and-down.</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Literate Programming: Because it integrates with Quarto/R, you can include executable code. You don&#39;t just show a screenshot of a chart; the presentation can actually run the code and render the live chart on the slide.</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Auto-Animate: It can automatically animate matching elements (like a logo or a data point) between two slides, creating a seamless, &quot;fluid&quot; transition that looks highly professional.</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>**Reveljs vs PPT**</span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Feature <span class="pp">|</span> Revealjs (Quarto) <span class="pp">|</span> PowerPoint <span class="pp">|</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----------------------|:-----------------------|:-----------------------|</span></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Format** <span class="pp">|</span> HTML/Web-based <span class="pp">|</span> Proprietary Binary (.pptx) <span class="pp">|</span></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Data Integration** <span class="pp">|</span> Live R/Python code chunks <span class="pp">|</span> Static Copy/Paste <span class="pp">|</span></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Navigation** <span class="pp">|</span> 2D (Horizontal &amp; Vertical) <span class="pp">|</span> Linear (Sequential) <span class="pp">|</span></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Version Control** <span class="pp">|</span> Git/GitHub friendly <span class="pp">|</span> Difficult to track changes <span class="pp">|</span></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Styling** <span class="pp">|</span> CSS and SASS <span class="pp">|</span> Drag-and-drop GUI <span class="pp">|</span></span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Accessibility** <span class="pp">|</span> Built-in web accessibility <span class="pp">|</span> Requires manual alt-text/checks <span class="pp">|</span></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="fu">## Revealjs presentation</span></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>**Revealjs Presentation**</span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View my Revealjs Presentation: Data-Driven Marketing Portfolio</span><span class="co">](https://geoflores03.github.io/Data-Driven-Marketing-Portfolio-Web-Construction-Project/#/title-slide)</span></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>**Description**</span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>Presentation outlines the construction of my professional portfolio website, designed to highlight the intersection of data science and marketing.</span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>**Learning Experience**</span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Technical Skills: I learned how to use Revealjs for creating dynamic presentations, which is a valuable skill for communicating data insights effectively.</span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Content Creation: Crafting the narrative around my portfolio helped me clarify my own understanding of my projects and how to present them in a compelling way.</span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="fu">## Advanced Wrangling Lecture</span></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Column-wise Operations with <span class="in">`across()`</span>:</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>In M05, we learned how to summarize single columns. However, when working with large data-sets, repeating the same logic for twenty different variables is &quot;tedious and error-prone&quot;. The <span class="in">`across()`</span> function, used inside <span class="in">`summarize()`</span> or <span class="in">`mutate()`</span>, allows you to apply a function to multiple columns simultaneously. Use <span class="in">`across()`</span> whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Row-wise Operations with <span class="in">`rowwise()`</span>:</span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>Standard dplyr operations are &quot;column-oriented,&quot; meaning they calculate results vertically down a column. M06 introduces <span class="in">`rowwise()`</span>, which creates &quot;virtual&quot; subsets of the data where each group is exactly one row. This allows you to compute aggregates horizontally across the columns of a single observation. Use <span class="in">`rowwise()`</span> when you need to calculate per-row summary statistics, such as finding the maximum value across several different test scores for each individual student</span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Filtering Joins: The <span class="in">`anti_join()`</span>:</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>M05 introduced basic joins, but Step 6 delves into &quot;Relational Data,&quot; focusing on the integrity between tables . A major addition is the <span class="in">`anti_join()`</span>, which does not add new columns but instead filters the first table based on the absence of matches in the second. <span class="in">`anti_join()`</span> is most useful for diagnosing join mismatches. Use it to identify &quot;orphan&quot; records—rows in your primary data that have no corresponding information in your reference table, often due to data entry errors or missing keys.</span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with Tools learned in Module</span></span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>Working in the &quot;basement&quot; of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this un-glamorous work into a &quot;fluent&quot; and highly efficient workflow.</span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>Some of the tools that were the most compelling to me were:</span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**&quot;Succinct and Transparent&quot; Code**:</span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>Instead of copy-pasting the same logic for dozens of columns—which is a hallmark of difficult basement work—functions like <span class="in">`across()`</span> allow you to apply transformations to multiple variables simultaneously based on their type or name. David Robinson highlights that functions like <span class="in">`add_count()`</span> can take a three-step process (group, mutate, ungroup) and collapse it into a single line. This keeps the analyst in their &quot;data analysis flow,&quot; ensuring that the momentum of the project isn&#39;t lost during the cleaning phase.</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Data in the Wild**:</span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>David Robinson’s live screen-cast provides a realistic look at how &quot;hard&quot; wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like &quot;UK&quot; and &quot;EL&quot; need to be recorded to &quot;GB&quot; and &quot;GR&quot; to satisfy a specific visualization package. As Robinson notes, the Tidyverse is &quot;greater than the sum of its parts&quot;. While individual functions like <span class="in">`mutate`</span> or <span class="in">`separate`</span> are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges</span></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using <span class="in">`across()`</span> effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large data-sets. Additionally, understanding when to use <span class="in">`rowwise()`</span> versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use <span class="in">`anti_join()`</span> to identify mismatches between tables, which requires a solid understanding of the relationships between the data-sets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of data-sets and scenarios.</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub Pages</span></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View my GitHub Pages:</span><span class="co">](https://geoflores03.github.io/Flores-Geovanni-M06-Reflection-Essay-Adv-Data-Wrangling.qmd/)</span></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    output-file: index.html</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 4</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    code-link: true</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: cosmo</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    code-overflow: wrap</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">    embed-resources: true</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">    echo: true</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summarized learning of Tidyverse</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>My list of key takeaways from the sources are as follows:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>**Advanced Counting and Summarizing**:</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Enhanced <span class="in">`count()`</span> Arguments: The <span class="in">`count()`</span> function included three functions which all hold powerful arguments. Those three being <span class="in">`sort = TRUE`</span>, <span class="in">`name`</span>, and <span class="in">`wt`</span>. Each hold different purposes. <span class="in">`sort = TRUE`</span> allows you to sort the results in descending order, <span class="in">`name`</span> allows you to specify a custom name for the count column, and <span class="in">`wt`</span> allows you to weight the counts by a specific variable. These arguments provide more flexibility and control when summarizing data.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>List Columns in <span class="in">`summarize`</span>(): The <span class="in">`summarize()`</span> function can now create list columns, which allows you to store complex data structures within a single column. This is particularly useful for grouping and summarizing data in a more flexible way, as it enables you to keep related data together without needing to flatten it into a more traditional tabular format. This feature enhances the ability to perform more complex analyses and visualizations directly within the tidyverse framework.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>**Specialized Factor and Plotting Techniques**:</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`fct_reorder()`</span> and <span class="in">`fct_lump()`</span>: These functions are part of the <span class="in">`forcats`</span> package and are used for handling factors in R. <span class="in">`fct_reorder()`</span> allows you to reorder factor levels based on the values of another variable, which is particularly useful for creating more informative plots. <span class="in">`fct_lump()`</span> helps to lump together infrequent factor levels into a single &quot;Other&quot; category, which can simplify visualizations and make them easier to interpret when dealing with categorical data that has many levels.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Logarithmic Scales: They sources emphasize using <span class="in">`scale_x_log10()`</span> or <span class="in">`scale_y_log10()`</span> in ggplot2 to handle data that spans several orders of magnitude. This technique is crucial for visualizing data with a wide range, as it can help to reveal patterns and relationships that might be obscured on a linear scale. Logarithmic scales can make it easier to compare values that differ greatly and can help to identify trends that are not immediately apparent in a standard plot.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>**Tidy Data Cleaning and Simulation**:</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The <span class="in">`crossing()`</span> function: This function is the equivalent of <span class="in">`expand.grid()`</span> but is designed to work with tidy data principles. It creates a data frame from all combinations of the supplied vectors or factors, which is particularly useful for generating all possible combinations of variables for analysis or simulation purposes. This function helps to maintain the tidy data structure while allowing for comprehensive exploration of variable interactions.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="in">`seperate()`</span> vs <span class="in">`extract()`</span>: The <span class="in">`separate()`</span> function is used to split a single character column into multiple columns based on a specified separator, while the <span class="in">`extract()`</span> function allows you to use regular expressions to extract specific patterns from a character column into new columns. Both functions are essential for tidying data, especially when dealing with messy or unstructured data that requires parsing and restructuring to be useful for analysis.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## David Robinson&#39;s performance and understanding</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>**Analysis of the Performance**:</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Robinsons performance in the video was impressive. He began with a dataset which he emphasized the goal of &quot;learning things&quot; with the audience. He provided looks into data sets and in real time showed him correcting data types and codes that were missing. He demonstarated the <span class="in">`ggflags`</span> package which he struggled with working with a first. I found his errors to be helpful because overtime working more with packages and data sets, I may find myself in similar situations. Him starting with a stacked bar plot then shifting to a facted slop graph showed me how to be productive and how helpful some of these packages can be for visualizations. The engagement with the audience was also helpful because it made the video more interactive and allowed for a better understanding of the concepts being discussed. Overall, I found his performance to be informative and engaging, providing valuable insights into data analysis and visualization techniques.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>**Understanding**:</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>The performance effectively illustrates that data science is rarely a linear path. Overtime, the understanding will requires a deep familiarity with the &quot;bag of tricks&quot; mentioned in his other talk—such as <span class="in">`fct_lump`</span> to group small countries into an &quot;Other&quot; category—to turn raw, messy data into an clean, insightful visualization.</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Two Proccesses</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>**Initial Data Cleaning**</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>In the first video, the process is about fundamental data integrity. The goal is to strip away responses that aren&#39;t &quot;real&quot; or usable. This usually involves:</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Validity Checks: Filtering out respondents who didn&#39;t provide consent or failed to complete the core survey sections.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Behavioral Cleaning: Removing &quot;speeders&quot; (people who finished too fast) or &quot;straight-liners&quot; (people who chose the same answer for every question), which suggests they weren&#39;t paying attention.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Technical De-duplication: Ensuring one response per participant by checking unique identifiers or IP addresses.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>**Further Data Cleaning**</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>The second video moves into research-specific refinement. This is where the data is tailored to the actual study goals. This involves:</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Demographic Filtering: Keeping only the participants that fit the target profile (e.g., specific age groups or regions relevant to the COVID-19 consumer panel).</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Handling Inconsistencies: Dropping participants who gave contradictory answers (e.g., saying they are &quot;unemployed&quot; but later listing a &quot;full-time salary&quot;).</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Wave Merging: In the context of your course, this likely involves joining different &quot;waves&quot; of data (Wave 1 vs. Wave 2) to see how consumer behavior changed over time.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>**Big Differences between the Two**</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Objective: Initial cleaning asks, &quot;Is this data valid?&quot; Further cleaning asks, &quot;Is this data relevant?&quot;</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Tools: Initial cleaning often relies on logical filters (if-then), while further cleaning involves more complex &quot;wrangling&quot; like joining datasets or recoding variables to fix specific errors.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>**Impact on Final Sample Size**</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>The final sample size is significantly smaller than the original &quot;raw&quot; count, but it has much higher statistical power and validity. Because you&#39;ve removed the noise (initial) and the irrelevant outliers (further), the conclusions you draw are much more likely to be accurate.</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## Revealjs</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>**Impression &amp; Capabilities**</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Vertical &amp; Horizontal Navigation: Unlike PowerPoint&#39;s linear path, Revealjs allows &quot;2D&quot; navigation. You can have main slides move left-to-right and deep-dive sub-slides move up-and-down.</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Literate Programming: Because it integrates with Quarto/R, you can include executable code. You don&#39;t just show a screenshot of a chart; the presentation can actually run the code and render the live chart on the slide.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Auto-Animate: It can automatically animate matching elements (like a logo or a data point) between two slides, creating a seamless, &quot;fluid&quot; transition that looks highly professional.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>**Reveljs vs PPT**</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Feature <span class="pp">|</span> Revealjs (Quarto) <span class="pp">|</span> PowerPoint <span class="pp">|</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----------------------|:-----------------------|:-----------------------|</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Format** <span class="pp">|</span> HTML/Web-based <span class="pp">|</span> Proprietary Binary (.pptx) <span class="pp">|</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Data Integration** <span class="pp">|</span> Live R/Python code chunks <span class="pp">|</span> Static Copy/Paste <span class="pp">|</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Navigation** <span class="pp">|</span> 2D (Horizontal &amp; Vertical) <span class="pp">|</span> Linear (Sequential) <span class="pp">|</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Version Control** <span class="pp">|</span> Git/GitHub friendly <span class="pp">|</span> Difficult to track changes <span class="pp">|</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Styling** <span class="pp">|</span> CSS and SASS <span class="pp">|</span> Drag-and-drop GUI <span class="pp">|</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Accessibility** <span class="pp">|</span> Built-in web accessibility <span class="pp">|</span> Requires manual alt-text/checks <span class="pp">|</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="fu">## Revealjs presentation</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>**Revealjs Presentation**</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View my Revealjs Presentation: Data-Driven Marketing Portfolio</span><span class="co">](https://geoflores03.github.io/Data-Driven-Marketing-Portfolio-Web-Construction-Project/#/title-slide)</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>**Description**</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>Presentation outlines the construction of my professional portfolio website, designed to highlight the intersection of data science and marketing.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>**Learning Experience**</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Technical Skills: I learned how to use Revealjs for creating dynamic presentations, which is a valuable skill for communicating data insights effectively.</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Content Creation: Crafting the narrative around my portfolio helped me clarify my own understanding of my projects and how to present them in a compelling way.</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Advanced Wrangling Lecture</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Column-wise Operations with <span class="in">`across()`</span>:</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>In M05, we learned how to summarize single columns. However, when working with large data-sets, repeating the same logic for twenty different variables is &quot;tedious and error-prone&quot;. The <span class="in">`across()`</span> function, used inside <span class="in">`summarize()`</span> or <span class="in">`mutate()`</span>, allows you to apply a function to multiple columns simultaneously. Use <span class="in">`across()`</span> whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Row-wise Operations with <span class="in">`rowwise()`</span>:</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>Standard dplyr operations are &quot;column-oriented,&quot; meaning they calculate results vertically down a column. M06 introduces <span class="in">`rowwise()`</span>, which creates &quot;virtual&quot; subsets of the data where each group is exactly one row. This allows you to compute aggregates horizontally across the columns of a single observation. Use <span class="in">`rowwise()`</span> when you need to calculate per-row summary statistics, such as finding the maximum value across several different test scores for each individual student</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Filtering Joins: The <span class="in">`anti_join()`</span>:</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>M05 introduced basic joins, but Step 6 delves into &quot;Relational Data,&quot; focusing on the integrity between tables . A major addition is the <span class="in">`anti_join()`</span>, which does not add new columns but instead filters the first table based on the absence of matches in the second. <span class="in">`anti_join()`</span> is most useful for diagnosing join mismatches. Use it to identify &quot;orphan&quot; records—rows in your primary data that have no corresponding information in your reference table, often due to data entry errors or missing keys.</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with Tools learned in Module</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>Working in the &quot;basement&quot; of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this un-glamorous work into a &quot;fluent&quot; and highly efficient workflow.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>Some of the tools that were the most compelling to me were:</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**&quot;Succinct and Transparent&quot; Code**:</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>Instead of copy-pasting the same logic for dozens of columns—which is a hallmark of difficult basement work—functions like <span class="in">`across()`</span> allow you to apply transformations to multiple variables simultaneously based on their type or name. David Robinson highlights that functions like <span class="in">`add_count()`</span> can take a three-step process (group, mutate, ungroup) and collapse it into a single line. This keeps the analyst in their &quot;data analysis flow,&quot; ensuring that the momentum of the project isn&#39;t lost during the cleaning phase.</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Data in the Wild**:</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>David Robinson’s live screen-cast provides a realistic look at how &quot;hard&quot; wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like &quot;UK&quot; and &quot;EL&quot; need to be recorded to &quot;GB&quot; and &quot;GR&quot; to satisfy a specific visualization package. As Robinson notes, the Tidyverse is &quot;greater than the sum of its parts&quot;. While individual functions like <span class="in">`mutate`</span> or <span class="in">`separate`</span> are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using <span class="in">`across()`</span> effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large data-sets. Additionally, understanding when to use <span class="in">`rowwise()`</span> versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use <span class="in">`anti_join()`</span> to identify mismatches between tables, which requires a solid understanding of the relationships between the data-sets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of data-sets and scenarios.</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub Pages</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View my GitHub Pages:</span><span class="co">](https://geoflores03.github.io/Flores-Geovanni-M06-Reflection-Essay-Adv-Data-Wrangling.qmd/)</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

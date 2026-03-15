@@ -1,9 +1,10 @@
 ---
 title: "M06-Reflection Essay-Advanced Data Wrangling"
 author: "Geovanni Flores"
-date: "February 15, 2026"
+date: "March 15, 2026"
 format: 
   html: 
+    output-file: index.html
     toc: true
     toc-depth: 4
     number-sections: true
@@ -146,7 +147,7 @@ Presentation outlines the construction of my professional portfolio website, des
 
 1.  Column-wise Operations with `across()`:
 
-In M05, we learned how to summarize single columns. However, when working with large datasets, repeating the same logic for twenty different variables is "tedious and error-prone". The `across()` function, used inside `summarize()` or `mutate()`, allows you to apply a function to multiple columns simultaneously. Use `across()` whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.
+In M05, we learned how to summarize single columns. However, when working with large data-sets, repeating the same logic for twenty different variables is "tedious and error-prone". The `across()` function, used inside `summarize()` or `mutate()`, allows you to apply a function to multiple columns simultaneously. Use `across()` whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.
 
 2.  Row-wise Operations with `rowwise()`:
 
@@ -162,7 +163,7 @@ M05 introduced basic joins, but Step 6 delves into "Relational Data," focusing o
 ::: callout-note
 ### My Response
 
-Working in the "basement" of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this unglamorous work into a "fluent" and highly efficient workflow.
+Working in the "basement" of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this un-glamorous work into a "fluent" and highly efficient workflow.
 
 Some of the tools that were the most compelling to me were:
 
@@ -172,7 +173,7 @@ Instead of copy-pasting the same logic for dozens of columns—which is a hallma
 
 2.  **Data in the Wild**:
 
-David Robinson’s live screencast provides a realistic look at how "hard" wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like "UK" and "EL" need to be recoded to "GB" and "GR" to satisfy a specific visualization package. As Robinson notes, the Tidyverse is "greater than the sum of its parts". While individual functions like `mutate` or `separate` are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.
+David Robinson’s live screen-cast provides a realistic look at how "hard" wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like "UK" and "EL" need to be recorded to "GB" and "GR" to satisfy a specific visualization package. As Robinson notes, the Tidyverse is "greater than the sum of its parts". While individual functions like `mutate` or `separate` are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.
 :::
 
 ## Challenges
@@ -180,11 +181,12 @@ David Robinson’s live screencast provides a realistic look at how "hard" wrang
 ::: callout-note
 ### My Response
 
-Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using `across()` effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large datasets. Additionally, understanding when to use `rowwise()` versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use `anti_join()` to identify mismatches between tables, which requires a solid understanding of the relationships between the datasets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of datasets and scenarios.
+Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using `across()` effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large data-sets. Additionally, understanding when to use `rowwise()` versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use `anti_join()` to identify mismatches between tables, which requires a solid understanding of the relationships between the data-sets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of data-sets and scenarios.
 :::
 
 ## GitHub Pages
 
 ::: callout-note
 ### My Response
+[View my GitHub Pages:](https://geoflores03.github.io/Flores-Geovanni-M06-Reflection-Essay-Adv-Data-Wrangling.qmd/)
 :::
