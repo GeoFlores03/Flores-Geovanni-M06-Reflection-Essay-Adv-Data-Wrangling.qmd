@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Geovanni Flores">
-<meta name="dcterms.date" content="2026-02-15">
+<meta name="dcterms.date" content="2026-03-15">
 
 <title>M06-Reflection Essay-Advanced Data Wrangling</title>
 <style>
@@ -2209,7 +2209,7 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summaried-learning-of-tidyverse" id="toc-summaried-learning-of-tidyverse" class="nav-link active" data-scroll-target="#summaried-learning-of-tidyverse"><span class="header-section-number">1</span> Summaried learning of Tidyverse</a></li>
+  <li><a href="#summarized-learning-of-tidyverse" id="toc-summarized-learning-of-tidyverse" class="nav-link active" data-scroll-target="#summarized-learning-of-tidyverse"><span class="header-section-number">1</span> Summarized learning of Tidyverse</a></li>
   <li><a href="#david-robinsons-performance-and-understanding" id="toc-david-robinsons-performance-and-understanding" class="nav-link" data-scroll-target="#david-robinsons-performance-and-understanding"><span class="header-section-number">2</span> David Robinson’s performance and understanding</a></li>
   <li><a href="#two-proccesses" id="toc-two-proccesses" class="nav-link" data-scroll-target="#two-proccesses"><span class="header-section-number">3</span> Two Proccesses</a></li>
   <li><a href="#revealjs" id="toc-revealjs" class="nav-link" data-scroll-target="#revealjs"><span class="header-section-number">4</span> Revealjs</a></li>
@@ -2242,7 +2242,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 15, 2026</p>
+      <p class="date">March 15, 2026</p>
     </div>
   </div>
   
@@ -2254,8 +2254,8 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="summaried-learning-of-tidyverse" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="summaried-learning-of-tidyverse"><span class="header-section-number">1</span> Summaried learning of Tidyverse</h2>
+<section id="summarized-learning-of-tidyverse" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="summarized-learning-of-tidyverse"><span class="header-section-number">1</span> Summarized learning of Tidyverse</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2447,7 +2447,7 @@ vertical-align: -.125em;
 <ol type="1">
 <li>Column-wise Operations with <code>across()</code>:</li>
 </ol>
-<p>In M05, we learned how to summarize single columns. However, when working with large datasets, repeating the same logic for twenty different variables is “tedious and error-prone”. The <code>across()</code> function, used inside <code>summarize()</code> or <code>mutate()</code>, allows you to apply a function to multiple columns simultaneously. Use <code>across()</code> whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.</p>
+<p>In M05, we learned how to summarize single columns. However, when working with large data-sets, repeating the same logic for twenty different variables is “tedious and error-prone”. The <code>across()</code> function, used inside <code>summarize()</code> or <code>mutate()</code>, allows you to apply a function to multiple columns simultaneously. Use <code>across()</code> whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.</p>
 <ol start="2" type="1">
 <li>Row-wise Operations with <code>rowwise()</code>:</li>
 </ol>
@@ -2471,7 +2471,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Working in the “basement” of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this unglamorous work into a “fluent” and highly efficient workflow.</p>
+<p>Working in the “basement” of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this un-glamorous work into a “fluent” and highly efficient workflow.</p>
 <p>Some of the tools that were the most compelling to me were:</p>
 <ol type="1">
 <li><strong>“Succinct and Transparent” Code</strong>:</li>
@@ -2480,7 +2480,7 @@ vertical-align: -.125em;
 <ol start="2" type="1">
 <li><strong>Data in the Wild</strong>:</li>
 </ol>
-<p>David Robinson’s live screencast provides a realistic look at how “hard” wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like “UK” and “EL” need to be recoded to “GB” and “GR” to satisfy a specific visualization package. As Robinson notes, the Tidyverse is “greater than the sum of its parts”. While individual functions like <code>mutate</code> or <code>separate</code> are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.</p>
+<p>David Robinson’s live screen-cast provides a realistic look at how “hard” wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like “UK” and “EL” need to be recorded to “GB” and “GR” to satisfy a specific visualization package. As Robinson notes, the Tidyverse is “greater than the sum of its parts”. While individual functions like <code>mutate</code> or <code>separate</code> are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.</p>
 </div>
 </div>
 </section>
@@ -2496,13 +2496,13 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using <code>across()</code> effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large datasets. Additionally, understanding when to use <code>rowwise()</code> versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use <code>anti_join()</code> to identify mismatches between tables, which requires a solid understanding of the relationships between the datasets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of datasets and scenarios.</p>
+<p>Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using <code>across()</code> effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large data-sets. Additionally, understanding when to use <code>rowwise()</code> versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use <code>anti_join()</code> to identify mismatches between tables, which requires a solid understanding of the relationships between the data-sets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of data-sets and scenarios.</p>
 </div>
 </div>
 </section>
 <section id="github-pages" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="github-pages"><span class="header-section-number">9</span> GitHub Pages</h2>
-<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -2512,7 +2512,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-
+<p><a href="https://geoflores03.github.io/Flores-Geovanni-M06-Reflection-Essay-Adv-Data-Wrangling.qmd/">View my GitHub Pages:</a></p>
 </div>
 </div>
 <!-- -->
@@ -2975,7 +2975,7 @@ vertical-align: -.125em;
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;M06-Reflection Essay-Advanced Data Wrangling&quot;</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Geovanni Flores&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;February 15, 2026&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;March 15, 2026&quot;</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html: </span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
@@ -2993,7 +2993,7 @@ vertical-align: -.125em;
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summaried learning of Tidyverse</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summarized learning of Tidyverse</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
@@ -3085,7 +3085,7 @@ vertical-align: -.125em;
 <span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>**Reveljs vs PPT**</span>
 <span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Feature <span class="pp">|</span> Revealjs (Quarto) <span class="pp">|</span> PowerPoint <span class="pp">|</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|:---|</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----------------------|:-----------------------|:-----------------------|</span></span>
 <span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Format** <span class="pp">|</span> HTML/Web-based <span class="pp">|</span> Proprietary Binary (.pptx) <span class="pp">|</span></span>
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Data Integration** <span class="pp">|</span> Live R/Python code chunks <span class="pp">|</span> Static Copy/Paste <span class="pp">|</span></span>
 <span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Navigation** <span class="pp">|</span> 2D (Horizontal &amp; Vertical) <span class="pp">|</span> Linear (Sequential) <span class="pp">|</span></span>
@@ -3120,7 +3120,7 @@ vertical-align: -.125em;
 <span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Column-wise Operations with <span class="in">`across()`</span>:</span>
 <span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>In M05, we learned how to summarize single columns. However, when working with large datasets, repeating the same logic for twenty different variables is &quot;tedious and error-prone&quot;. The <span class="in">`across()`</span> function, used inside <span class="in">`summarize()`</span> or <span class="in">`mutate()`</span>, allows you to apply a function to multiple columns simultaneously. Use <span class="in">`across()`</span> whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>In M05, we learned how to summarize single columns. However, when working with large data-sets, repeating the same logic for twenty different variables is &quot;tedious and error-prone&quot;. The <span class="in">`across()`</span> function, used inside <span class="in">`summarize()`</span> or <span class="in">`mutate()`</span>, allows you to apply a function to multiple columns simultaneously. Use <span class="in">`across()`</span> whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.</span>
 <span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Row-wise Operations with <span class="in">`rowwise()`</span>:</span>
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
@@ -3136,7 +3136,7 @@ vertical-align: -.125em;
 <span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
 <span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
 <span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>Working in the &quot;basement&quot; of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this unglamorous work into a &quot;fluent&quot; and highly efficient workflow.</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>Working in the &quot;basement&quot; of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this un-glamorous work into a &quot;fluent&quot; and highly efficient workflow.</span>
 <span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>Some of the tools that were the most compelling to me were:</span>
 <span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
@@ -3146,7 +3146,7 @@ vertical-align: -.125em;
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Data in the Wild**:</span>
 <span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>David Robinson’s live screencast provides a realistic look at how &quot;hard&quot; wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like &quot;UK&quot; and &quot;EL&quot; need to be recoded to &quot;GB&quot; and &quot;GR&quot; to satisfy a specific visualization package. As Robinson notes, the Tidyverse is &quot;greater than the sum of its parts&quot;. While individual functions like <span class="in">`mutate`</span> or <span class="in">`separate`</span> are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>David Robinson’s live screen-cast provides a realistic look at how &quot;hard&quot; wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like &quot;UK&quot; and &quot;EL&quot; need to be recorded to &quot;GB&quot; and &quot;GR&quot; to satisfy a specific visualization package. As Robinson notes, the Tidyverse is &quot;greater than the sum of its parts&quot;. While individual functions like <span class="in">`mutate`</span> or <span class="in">`separate`</span> are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.</span>
 <span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges</span></span>
@@ -3154,14 +3154,15 @@ vertical-align: -.125em;
 <span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
 <span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
 <span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using <span class="in">`across()`</span> effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large datasets. Additionally, understanding when to use <span class="in">`rowwise()`</span> versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use <span class="in">`anti_join()`</span> to identify mismatches between tables, which requires a solid understanding of the relationships between the datasets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of datasets and scenarios.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using <span class="in">`across()`</span> effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large data-sets. Additionally, understanding when to use <span class="in">`rowwise()`</span> versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use <span class="in">`anti_join()`</span> to identify mismatches between tables, which requires a solid understanding of the relationships between the data-sets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of data-sets and scenarios.</span>
 <span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub Pages</span></span>
 <span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
 <span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### My Response</span></span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View my GitHub Pages:</span><span class="co">](https://geoflores03.github.io/Flores-Geovanni-M06-Reflection-Essay-Adv-Data-Wrangling.qmd/)</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
