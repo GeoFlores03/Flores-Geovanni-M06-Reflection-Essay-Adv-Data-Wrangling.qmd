@@ -1,0 +1,190 @@
+---
+title: "M06-Reflection Essay-Advanced Data Wrangling"
+author: "Geovanni Flores"
+date: "February 15, 2026"
+format: 
+  html: 
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    code-link: true
+    theme: cosmo
+    code-overflow: wrap
+    code-fold: true
+    code-tools: true
+    embed-resources: true
+    echo: true
+editor: visual
+execute: 
+  freeze: auto
+---
+
+## Summarized learning of Tidyverse
+
+::: callout-note
+### My Response
+
+My list of key takeaways from the sources are as follows:
+
+**Advanced Counting and Summarizing**:
+
+-   Enhanced `count()` Arguments: The `count()` function included three functions which all hold powerful arguments. Those three being `sort = TRUE`, `name`, and `wt`. Each hold different purposes. `sort = TRUE` allows you to sort the results in descending order, `name` allows you to specify a custom name for the count column, and `wt` allows you to weight the counts by a specific variable. These arguments provide more flexibility and control when summarizing data.
+
+-   List Columns in `summarize`(): The `summarize()` function can now create list columns, which allows you to store complex data structures within a single column. This is particularly useful for grouping and summarizing data in a more flexible way, as it enables you to keep related data together without needing to flatten it into a more traditional tabular format. This feature enhances the ability to perform more complex analyses and visualizations directly within the tidyverse framework.
+
+**Specialized Factor and Plotting Techniques**:
+
+-   `fct_reorder()` and `fct_lump()`: These functions are part of the `forcats` package and are used for handling factors in R. `fct_reorder()` allows you to reorder factor levels based on the values of another variable, which is particularly useful for creating more informative plots. `fct_lump()` helps to lump together infrequent factor levels into a single "Other" category, which can simplify visualizations and make them easier to interpret when dealing with categorical data that has many levels.
+
+-   Logarithmic Scales: They sources emphasize using `scale_x_log10()` or `scale_y_log10()` in ggplot2 to handle data that spans several orders of magnitude. This technique is crucial for visualizing data with a wide range, as it can help to reveal patterns and relationships that might be obscured on a linear scale. Logarithmic scales can make it easier to compare values that differ greatly and can help to identify trends that are not immediately apparent in a standard plot.
+
+**Tidy Data Cleaning and Simulation**:
+
+-   The `crossing()` function: This function is the equivalent of `expand.grid()` but is designed to work with tidy data principles. It creates a data frame from all combinations of the supplied vectors or factors, which is particularly useful for generating all possible combinations of variables for analysis or simulation purposes. This function helps to maintain the tidy data structure while allowing for comprehensive exploration of variable interactions.
+
+-   `seperate()` vs `extract()`: The `separate()` function is used to split a single character column into multiple columns based on a specified separator, while the `extract()` function allows you to use regular expressions to extract specific patterns from a character column into new columns. Both functions are essential for tidying data, especially when dealing with messy or unstructured data that requires parsing and restructuring to be useful for analysis.
+:::
+
+## David Robinson's performance and understanding
+
+::: callout-note
+### My Response
+
+**Analysis of the Performance**:
+
+Robinsons performance in the video was impressive. He began with a dataset which he emphasized the goal of "learning things" with the audience. He provided looks into data sets and in real time showed him correcting data types and codes that were missing. He demonstarated the `ggflags` package which he struggled with working with a first. I found his errors to be helpful because overtime working more with packages and data sets, I may find myself in similar situations. Him starting with a stacked bar plot then shifting to a facted slop graph showed me how to be productive and how helpful some of these packages can be for visualizations. The engagement with the audience was also helpful because it made the video more interactive and allowed for a better understanding of the concepts being discussed. Overall, I found his performance to be informative and engaging, providing valuable insights into data analysis and visualization techniques.
+
+**Understanding**:
+
+The performance effectively illustrates that data science is rarely a linear path. Overtime, the understanding will requires a deep familiarity with the "bag of tricks" mentioned in his other talk—such as `fct_lump` to group small countries into an "Other" category—to turn raw, messy data into an clean, insightful visualization.
+:::
+
+## Two Proccesses
+
+::: callout-note
+### My Response
+
+**Initial Data Cleaning**
+
+In the first video, the process is about fundamental data integrity. The goal is to strip away responses that aren't "real" or usable. This usually involves:
+
+-   Validity Checks: Filtering out respondents who didn't provide consent or failed to complete the core survey sections.
+
+-   Behavioral Cleaning: Removing "speeders" (people who finished too fast) or "straight-liners" (people who chose the same answer for every question), which suggests they weren't paying attention.
+
+-   Technical De-duplication: Ensuring one response per participant by checking unique identifiers or IP addresses.
+
+**Further Data Cleaning**
+
+The second video moves into research-specific refinement. This is where the data is tailored to the actual study goals. This involves:
+
+-   Demographic Filtering: Keeping only the participants that fit the target profile (e.g., specific age groups or regions relevant to the COVID-19 consumer panel).
+
+-   Handling Inconsistencies: Dropping participants who gave contradictory answers (e.g., saying they are "unemployed" but later listing a "full-time salary").
+
+-   Wave Merging: In the context of your course, this likely involves joining different "waves" of data (Wave 1 vs. Wave 2) to see how consumer behavior changed over time.
+
+**Big Differences between the Two**
+
+-   Objective: Initial cleaning asks, "Is this data valid?" Further cleaning asks, "Is this data relevant?"
+
+-   Tools: Initial cleaning often relies on logical filters (if-then), while further cleaning involves more complex "wrangling" like joining datasets or recoding variables to fix specific errors.
+
+**Impact on Final Sample Size**
+
+The final sample size is significantly smaller than the original "raw" count, but it has much higher statistical power and validity. Because you've removed the noise (initial) and the irrelevant outliers (further), the conclusions you draw are much more likely to be accurate.
+:::
+
+## Revealjs
+
+::: callout-note
+### My Response
+
+**Impression & Capabilities**
+
+-   Vertical & Horizontal Navigation: Unlike PowerPoint's linear path, Revealjs allows "2D" navigation. You can have main slides move left-to-right and deep-dive sub-slides move up-and-down.
+
+-   Literate Programming: Because it integrates with Quarto/R, you can include executable code. You don't just show a screenshot of a chart; the presentation can actually run the code and render the live chart on the slide.
+
+-   Auto-Animate: It can automatically animate matching elements (like a logo or a data point) between two slides, creating a seamless, "fluid" transition that looks highly professional.
+
+**Reveljs vs PPT**
+
+| Feature | Revealjs (Quarto) | PowerPoint |
+|:-----------------------|:-----------------------|:-----------------------|
+| **Format** | HTML/Web-based | Proprietary Binary (.pptx) |
+| **Data Integration** | Live R/Python code chunks | Static Copy/Paste |
+| **Navigation** | 2D (Horizontal & Vertical) | Linear (Sequential) |
+| **Version Control** | Git/GitHub friendly | Difficult to track changes |
+| **Styling** | CSS and SASS | Drag-and-drop GUI |
+| **Accessibility** | Built-in web accessibility | Requires manual alt-text/checks |
+:::
+
+## Revealjs presentation
+
+::: callout-note
+### My Response
+
+**Revealjs Presentation**
+
+[View my Revealjs Presentation: Data-Driven Marketing Portfolio](https://geoflores03.github.io/Data-Driven-Marketing-Portfolio-Web-Construction-Project/#/title-slide)
+
+**Description**
+
+Presentation outlines the construction of my professional portfolio website, designed to highlight the intersection of data science and marketing.
+
+**Learning Experience**
+
+-   Technical Skills: I learned how to use Revealjs for creating dynamic presentations, which is a valuable skill for communicating data insights effectively.
+-   Content Creation: Crafting the narrative around my portfolio helped me clarify my own understanding of my projects and how to present them in a compelling way.
+:::
+
+## Advanced Wrangling Lecture
+
+::: callout-note
+### My Response
+
+1.  Column-wise Operations with `across()`:
+
+In M05, we learned how to summarize single columns. However, when working with large datasets, repeating the same logic for twenty different variables is "tedious and error-prone". The `across()` function, used inside `summarize()` or `mutate()`, allows you to apply a function to multiple columns simultaneously. Use `across()` whenever you need to perform the same transformation—such as calculating the mean, finding the median, or rounding—on a specific group of variables based on their data type or name.
+
+2.  Row-wise Operations with `rowwise()`:
+
+Standard dplyr operations are "column-oriented," meaning they calculate results vertically down a column. M06 introduces `rowwise()`, which creates "virtual" subsets of the data where each group is exactly one row. This allows you to compute aggregates horizontally across the columns of a single observation. Use `rowwise()` when you need to calculate per-row summary statistics, such as finding the maximum value across several different test scores for each individual student
+
+3.  Filtering Joins: The `anti_join()`:
+
+M05 introduced basic joins, but Step 6 delves into "Relational Data," focusing on the integrity between tables . A major addition is the `anti_join()`, which does not add new columns but instead filters the first table based on the absence of matches in the second. `anti_join()` is most useful for diagnosing join mismatches. Use it to identify "orphan" records—rows in your primary data that have no corresponding information in your reference table, often due to data entry errors or missing keys.
+:::
+
+## Working with Tools learned in Module
+
+::: callout-note
+### My Response
+
+Working in the "basement" of data science through wrangling is indeed a rigorous process, but what stands out most from the sources is how the Tidyverse tools transform this unglamorous work into a "fluent" and highly efficient workflow.
+
+Some of the tools that were the most compelling to me were:
+
+1.  **"Succinct and Transparent" Code**:
+
+Instead of copy-pasting the same logic for dozens of columns—which is a hallmark of difficult basement work—functions like `across()` allow you to apply transformations to multiple variables simultaneously based on their type or name. David Robinson highlights that functions like `add_count()` can take a three-step process (group, mutate, ungroup) and collapse it into a single line. This keeps the analyst in their "data analysis flow," ensuring that the momentum of the project isn't lost during the cleaning phase.
+
+2.  **Data in the Wild**:
+
+David Robinson’s live screencast provides a realistic look at how "hard" wrangling can be. He demonstrates that even for an expert, a significant portion of the work involves real-time debugging—such as realizing country codes like "UK" and "EL" need to be recoded to "GB" and "GR" to satisfy a specific visualization package. As Robinson notes, the Tidyverse is "greater than the sum of its parts". While individual functions like `mutate` or `separate` are useful, their true value is revealed when they work together to handle the messy, unexpected nature of real-world data.
+:::
+
+## Challenges
+
+::: callout-note
+### My Response
+
+Some of the challenges I ran into while trying to master the wrangling tools were related to the complexity of the functions and the need for a deep understanding of the data. For example, using `across()` effectively requires a good grasp of how to select columns based on their names or types, which can be tricky when dealing with large datasets. Additionally, understanding when to use `rowwise()` versus standard dplyr operations can be confusing at first, as it changes the way data is processed. Another challenge was learning how to use `anti_join()` to identify mismatches between tables, which requires a solid understanding of the relationships between the datasets. Overall, mastering these tools requires practice and a willingness to experiment with different functions to see how they can be applied to real-world data cleaning and analysis tasks. Overall, the key to overcoming these challenges is to stay patient and persistent, as wrangling is a skill that improves with experience and exposure to a variety of datasets and scenarios.
+:::
+
+## GitHub Pages
+
+::: callout-note
+### My Response
+:::
